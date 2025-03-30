@@ -1,0 +1,7 @@
+[build]
+  command = "pnpm install && pnpm run build"
+  publish = "dist"
+
+[context.production.environment]
+  NODE_VERSION = "18"
+  VITE_LOG_LEVEL = "debug"
