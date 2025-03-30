@@ -6,3 +6,6 @@
   NODE_VERSION = "18"
   NODE_OPTIONS = "--max_old_space_size=4096"  # 4GB memory
   VITE_LOG_LEVEL = "error"  # Reduce verbosity
+  
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
