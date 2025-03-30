@@ -1,7 +1,8 @@
 [build]
-  command = "pnpm install && pnpm run build"
+  command = "pnpm install --frozen-lockfile && pnpm build"
   publish = "dist"
 
 [context.production.environment]
   NODE_VERSION = "18"
-  VITE_LOG_LEVEL = "debug"
+  NODE_OPTIONS = "--max_old_space_size=4096"  # 4GB memory
+  VITE_LOG_LEVEL = "error"  # Reduce verbosity
