@@ -1,7 +1,0 @@
-{
-  "build": {
-    "env": {
-      "WORKERS_ENABLE_DEV_REGISTRY": "false"
-    }
-  }
-}
